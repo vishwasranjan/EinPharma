@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <ImageView
+        android:layout_width="72.28dp"
+        android:layout_height="56.2dp"
+        android:id="@+id/signup_app_logo"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="177dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="257dp"
+        android:layout_height="80dp"
+        android:id="@+id/logo_line"
+        android:src="@drawable/logo_line"
+        android:layout_below="@id/signup_app_logo"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="start"
+        android:hint="Name"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/logo_line"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/signup_email_ID_or_phone_no"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signup_name"
+        android:gravity="start"
+        android:hint="Email-ID or Phone Number"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="start"
+        android:hint="Password"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/signup_email_ID_or_phone_no"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/black" />
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signup_password"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/signup_image"
+        android:textColor="@color/white" />
+    <ImageView
+        android:id="@+id/login_or"
+        android:layout_width="302dp"
+        android:layout_height="20dp"
+        android:src="@drawable/or_image"
+        android:layout_below="@id/signup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="131dp"
+        android:layout_height="30dp"
+        android:id="@+id/signup_linear_layout"
+        android:layout_below="@id/login_or"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/google"
+            android:id="@+id/signup_with_google"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook"
+            android:id="@+id/signup_with_facebook"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
