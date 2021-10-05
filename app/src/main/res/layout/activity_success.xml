@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessActivity">
+    <ImageView
+        android:layout_width="245.18dp"
+        android:layout_height="196.57dp"
+        android:src="@drawable/success_image"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sucess_image_icon"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:src="@drawable/success_message"
+        android:id="@+id/success_image_icon_message"
+        android:layout_below="@id/sucess_image_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:id="@+id/success_button"
+        android:layout_above="@id/sucess_border_line"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:text="Continue Order"
+        android:textColor="@color/white"/>
+    
+
+    
+    <ImageView
+        android:layout_width="375dp"
+        android:layout_height="34dp"
+        android:src="@drawable/bar"
+        android:id="@+id/sucess_border_line"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    
+
+</RelativeLayout>

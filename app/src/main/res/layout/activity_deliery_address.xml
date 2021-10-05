@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DelieryAddressActivity"
+    android:background="#DFE3FF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/delivery_address_linear_layout">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_icon"
+            android:id="@+id/back_icon_delivery_address"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:paddingLeft="25dp"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/delivery_address_linear_layout"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"/>
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:hint="Name"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/delivery_address_name"
+                android:background="@color/white"/>
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:hint="Phone Number*"
+                android:layout_gravity="center"
+                android:id="@+id/delivery_address_phone_number"
+                android:inputType="phone"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"/>
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:hint="House No, Building, Street, Area*"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/delivery_address_house_number"
+                android:background="@color/white"/>
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:hint="Locality/Town*"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/delivery_address_town"
+                android:background="@color/white"/>
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:hint="Pincode*"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/delivery_address_pincode"
+                android:background="@color/white"/>
+            <LinearLayout
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3"
+                android:background="@color/white">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:id="@+id/delivery_address_city"
+                    android:hint="City/District*" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:id="@+id/delivery_address_state"
+                    android:hint="State*" />
+            </LinearLayout>
+            <Button
+                android:layout_width="327dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:text="Save Address"
+                android:layout_marginTop="10dp"
+                android:id="@+id/delivery_address_save_address"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
