@@ -34,4 +34,14 @@
             android:id="@+id/nav_settings"
             android:icon="@drawable/nav_settings"/>
     </group>
+    <item
+        android:title="Logout"
+        android:icon="@drawable/logout">
+        <menu>
+            <item android:title="Logout"
+                android:id="@+id/logout"/>
+            <item android:title="Logout of all devices"
+                android:id="@+id/logout_all_devices"/>
+        </menu>
+    </item>
 </menu>

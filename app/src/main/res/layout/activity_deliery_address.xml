@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:text="Delivery Address"
             android:paddingLeft="25dp"
+            android:textStyle="bold"
             android:textSize="25dp"/>
     </LinearLayout>
     <ScrollView
@@ -50,6 +51,7 @@
                 android:layout_height="45dp"
                 android:hint="Name"
                 android:padding="10dp"
+                android:inputType="text"
                 android:layout_gravity="center"
                 android:id="@+id/delivery_address_name"
                 android:background="@color/white"/>
@@ -75,6 +77,7 @@
                 android:layout_height="45dp"
                 android:hint="House No, Building, Street, Area*"
                 android:padding="10dp"
+                android:inputType="text"
                 android:layout_gravity="center"
                 android:id="@+id/delivery_address_house_number"
                 android:background="@color/white"/>
@@ -83,6 +86,7 @@
                 android:layout_height="45dp"
                 android:hint="Locality/Town*"
                 android:padding="10dp"
+                android:inputType="text"
                 android:layout_gravity="center"
                 android:id="@+id/delivery_address_town"
                 android:background="@color/white"/>
@@ -91,6 +95,7 @@
                 android:layout_height="45dp"
                 android:hint="Pincode*"
                 android:padding="10dp"
+                android:inputType="number"
                 android:layout_gravity="center"
                 android:id="@+id/delivery_address_pincode"
                 android:background="@color/white"/>
@@ -99,20 +104,23 @@
                 android:layout_height="45dp"
                 android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:weightSum="3"
                 android:background="@color/white">
                 <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
                     android:padding="10dp"
+                    android:inputType="text"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
                     android:id="@+id/delivery_address_city"
                     android:hint="City/District*" />
                 <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="115dp"
+                    android:layout_height="45dp"
                     android:padding="10dp"
+                    android:inputType="text"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
                     android:id="@+id/delivery_address_state"
                     android:hint="State*" />
             </LinearLayout>
@@ -122,7 +130,7 @@
                 android:background="@drawable/button"
                 android:layout_gravity="center"
                 android:text="Save Address"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="50dp"
                 android:id="@+id/delivery_address_save_address"/>
 
 

@@ -13,14 +13,23 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/sucess_image_icon"
         android:layout_marginTop="40dp"/>
-    <ImageView
-        android:layout_width="275dp"
-        android:layout_height="110dp"
-        android:src="@drawable/success_message"
-        android:id="@+id/success_image_icon_message"
+    <TextView
+        android:layout_width="116dp"
+        android:layout_height="37dp"
         android:layout_below="@id/sucess_image_icon"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:text="Thank You"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:id="@+id/success_image_thank_you"/>
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:id="@+id/success_message_confirmation"
+        android:layout_below="@id/success_image_thank_you"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
     <Button
         android:layout_width="327dp"
         android:layout_height="50dp"

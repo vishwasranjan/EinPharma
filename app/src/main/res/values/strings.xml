@@ -2,4 +2,8 @@
     <string name="app_name">EinPharma</string>
     <string name="navigation_open">Open Navigation Drawer</string>
     <string name="navigation_close">Close Navigation Drawer</string>
+    <string name="radio_label_1">Credit Card</string>
+    <string name="radio_label_2">Paypal</string>
+    <string name="radio_label_3">Google pay</string>
+    <string name="radio_label_4">Apple pay</string>
 </resources>
