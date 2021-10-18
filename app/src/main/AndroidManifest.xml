@@ -15,11 +15,7 @@
         android:theme="@style/Theme.EinPharma">
         <activity android:name=".CheckoutActivity"
             android:theme="@style/myTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".NoInternetConnectionActivity" />
         <activity
@@ -31,7 +27,11 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/myTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".SignUpActivity"
@@ -41,7 +41,9 @@
             android:theme="@style/myTheme" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/myTheme" />
+            android:theme="@style/myTheme">
+
+        </activity>
     </application>
 
 </manifest>
